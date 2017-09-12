@@ -1,0 +1,46 @@
+body {
+  width: 37%;
+  margin: auto;
+}
+.wrapper {
+  height: 100vh;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.intro {
+    margin-bottom: 0;
+}
+img {
+  height: 500px;
+  width: 500px;
+  background-image: url("../img/irrelevant.png");
+}
+/* Codify pretty-printing styles. Used with prettify.js.  */
+pre .pln, code .pln { color: #ABB4C1; } /* plaintext - grey */
+pre .pun, code .pun { color: #f0f0f0;  } /* punctuation - white  */
+pre .dec, code .dec { color: #ABB4C1; } /* html DOCTYPE - grey */
+pre .tag, code .tag { color: #E26D76; } /* html tag - red  */
+pre .atn, code .atn { color: #D39B67; font-weight: normal;} /* html attribute name - orange */
+pre .atv, code .atv { color: #98C37A; } /* html attribute value - green */
+pre .com, code .com { color: #586371; } /* html comment - dark grey */
+
+
+pre.prettyprint, pre.prettyprints, code.prettyprint {
+  font-family:'Droid Sans Mono','CPMono_v07 Bold','Droid Sans';
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #282C34; /*  background is black (well, just a tad less dark )  */
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+}
+.prettyprint.lang-html, .prettyprints {
+    padding: 7px;
+}

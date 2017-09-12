@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- character set -->
+    <meta charset="utf-8">
+    <!-- title -->
+    <title></title>
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body style="padding-top:150px;">
+
+<!--
+    1) How to write HTML Standard-Compliant Markup?
+-->
+<!-- <p class="intro">New items on the menu today include <strong>caramel apple cider and breakfast crepes</strong>.</p>
+<p class="intro">The caramel apple cider is delicious.</p>
+      <pre class="prettyprint lang-html">
+&lt;!-- bad code --&gt;
+<span>1</span> &lt;p id="intro"&gt;New items on the menu today include &lt;strong&gt;caramel apple cider and breakfast crepes&lt;/p&gt;.&lt;/strong&gt;
+<span>2</span> &lt;p id="intro"&gt;The caramel apple cider is delicious.</pre>
+
+      <pre class="prettyprint lang-html">
+&lt;!-- good code --&gt;
+<span>1</span> &lt;p class="intro"&gt;New items on the menu today include &lt;strong&gt;caramel apple cider and breakfast crepes&lt;/strong&gt;.&lt;/p&gt;<span class="space"></span>
+<span>2</span> &lt;p class="intro"&gt;The caramel apple cider is delicious.&lt;/p&gt;</pre> -->
+<!--
+  / 1) How to write HTML Standard-Compliant Markup?
+-->
+
+
+
+
+
+<!--
+    2) Make Use of Semantic Elements
+-->
+<!-- <h1 class="heading"><strong>The text inside of a heading 1 should be the most important text on the webapge</strong></h1>
+<p>It has been a while. What have you been up to lately?</p> -->
+
+      <!-- <pre class="prettyprint lang-html">
+&lt;!-- bad code --&gt;
+<span>1</span> &lt;span class="heading"&gt;&lt;strong&gt;The text inside of a heading 1 should be the most important text on the webapge&lt;/strong&gt;.&lt;/span&gt;
+<span>2</span> &lt;br&gt;&lt;br&gt;
+<span>3</span> It has been a while. What have you been up to lately?
+<span>4</span> &lt;br&gt;&lt;br&gt;</pre> -->
+
+<!-- <h1>Welcome Back</h1>
+<p>It has been a while. What have you been up to lately?</p> -->
+
+      <!-- <pre class="prettyprint lang-html">
+&lt;!-- good code --&gt;
+<span>1</span> &lt;h1&gt;The text inside of a heading 1 should be the most important text on the webapge&lt;/h1&gt;
+<span>2</span> &lt;p&gt;It has been a while. What have you been up to lately?&lt;/p&gt;</pre> -->
+<!--
+  / 2)Make Use of Semantic Elements
+-->
+
+
+
+
+
+<!--
+    3) Use the Proper Document Structure
+-->
+<!-- <html>
+  <h1>This is a simple website</h1>
+  <p>Simple paragraph text</p>
+</html> -->
+
+      <!-- <pre class="prettyprint lang-html">
+&lt;!-- bad code --&gt;
+<span>1</span> &lt;html&gt;
+<span>2</span>   &lt;h1&gt;This is a simple website&lt;/h1&gt;
+<span>3</span>   &lt;p&gt;Simple paragraph text&lt;/p&gt;
+<span>4</span> &lt;/html&gt;</pre> -->
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>This is a simple website</title>
+  </head>
+  <body>
+    <h1>This is a simple website</h1>
+    <p>Simple paragraph text</p>
+  </body>
+</html> -->
+
+      <!-- <pre class="prettyprint lang-html">
+&lt;!-- good code --&gt;
+<span>1</span> &lt;!DOCTYPE html&gt;
+<span>2</span> &lt;html&gt;
+<span>3</span>   &lt;head&gt;
+<span>4</span>     &lt;title&gt;This is a simple website&lt;/title&gt;
+<span>5</span>   &lt;/head&gt;
+<span>6</span>   &lt;body&gt;
+<span>7</span>     &lt;h1&gt;This is a simple website&lt;/h1&gt;
+<span>8</span>     &lt;p&gt;Simple paragraph text&lt;/p&gt;
+<span>9</span>   &lt;/body&gt;
+<span>10</span> &lt;/html&gt;</pre> -->
+<!--
+  / 3) Use the Proper Document Structure
+-->
+
+
+
+
+
+<!--
+    4) Keep Syntax Organized
+-->
+<!-- <Div>
+<h3>Chicago</h3>
+<H5 HIDDEN='HIDDEN'>City in Illinois</H5>
+<img src=chicago.jpg alt="Chicago, the third most populous city in the United States" />
+<ul>
+<li>234 square miles</li>
+<li>2.715 million residents</li>
+</ul>
+</DIV> -->
+
+<!-- <pre class="prettyprint lang-html">
+&lt;!-- bad code --&gt;
+<span>1</span> &lt;Div&gt;
+<span>2</span> &lt;h3&gt;Chicago&lt;/h3&gt;
+<span>3</span> &lt;H5 HIDDEN='HIDDEN'&gt;City in Illinois&lt;/H5&gt;
+<span>4</span> &lt;img src=chicago.jpg alt="Chicago, the third most populous city in the United States"&gt;
+<span>5</span> &lt;ul&gt;
+<span>6</span> &lt;li&gt;234 square miles&lt;/li&gt;
+<span>7</span> &lt;li&gt;2.715 million residents&lt;/li&gt;
+<span>8</span> &lt;/ul&gt;
+<span>9</span> &lt;/DIV&gt;</pre> -->
+
+<!-- <pre class="prettyprint lang-html">
+&lt;!-- good code --&gt;
+<span>1</span> &lt;div&gt;
+<span>2</span>   &lt;h3&gt;Chicago&lt;/h3&gt;
+<span>3</span>   &lt;h5 hidden&gt;City in Illinois&lt;/h5&gt;
+<span>4</span>   &lt;img src=chicago.jpg alt="Chicago, the third most populous city in the United States"&gt;
+<span>5</span>   &lt;ul&gt;
+<span>6</span>     &lt;li&gt;234 square miles&lt;/li&gt;
+<span>7</span>     &lt;li&gt;2.715 million residents&lt;/li&gt;
+<span>8</span>   &lt;/ul&gt;
+<span>9</span> &lt;/div&gt;</pre> -->
+<!--
+  / 4) Keep Syntax Organized
+-->
+
+
+
+
+
+<!--
+    5) Use Practical ID & Class Values
+-->
+<!-- <style>
+.red {
+  background: orange;
+  text-align: center;
+  padding:20px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 40px;
+}
+</style> -->
+<!-- <p class="red">Error! Please try again.</p> -->
+<!-- <pre class="prettyprint lang-html">
+&lt;!-- bad code --&gt;
+<span>1</span> &lt;p class="red"&gt;Error! Please try again.&lt;/p&gt;</pre> -->
+
+<!-- <pre class="prettyprint lang-html">
+&lt;!-- good code --&gt;
+<span>1</span> &lt;p class="alert"&gt;Error! Please try again.&lt;/p&gt;</pre> -->
+<!--
+  / 5) Use Practical ID & Class Values
+-->
+
+
+
+
+
+<!--
+    6) Use the Alternative Text Attribute on Images
+-->
+<!-- <img src="puppy.png">
+
+<pre class="prettyprint lang-html">
+&lt;!-- bad code --&gt;
+<span>1</span> &lt;img src="puppy.jpg"&gt;</pre> -->
+
+
+<!-- <img src="puppy.png" alt="A beautiful, two-year-old hound mix puppy"> -->
+<!-- <pre class="prettyprint lang-html">
+&lt;!-- good code --&gt;
+<span>1</span> &lt;img src="puppy.png" alt="A beautiful, two-year-old hound mix puppy"&gt;</pre> -->
+
+<!-- <pre class="prettyprint lang-html">
+&lt;!-- good code --&gt;
+<span>1</span> &lt;img src="img/irrelevant.png" alt=""&gt;</pre> -->
+
+<!-- <pre class="prettyprints lang-html">
+<span class="com">&lt;!-- good code --&gt;</span>
+<span class="pln">1</span> <span class="atn">.irrelevant</span> <span class="pln">{</span>
+<span class="pln">2</span>     <span class="pln">background-image:</span> <span style="color:#57B8C4;">url</span><span class="pln">(</span><span class="atv">"../img/irrelevant.png"</span><span class="pln">);</span>
+<span class="pln">3</span> <span class="pln">}</span></pre> -->
+<!--
+  / 6) Use the Alternative Text Attribute on Images
+-->
+
+
+
+
+
+<!--
+    7) Separate Content from Style
+-->
+<!-- <p style="color: #393; font-size: 24px;">Thank you for signing up!</p>
+<pre class="prettyprints">
+<span class="com">&lt;!-- bad code --&gt;</span>
+<span class="pln">1</span> <span class="tag">&lt;p</span> <span class="atn">style</span><span class="pun">=</span><span class="atv">"color: #393; font-size: 24px;"</span><span class="tag">&gt;</span><span class="pln">Thank you for signing up!</span><span class="tag">&lt;/p&gt;</span></pre> -->
+
+<!-- <p class="alert-success">Thank you for signing up!</p> -->
+<!-- <pre class="prettyprint lang-html">
+&lt;!-- good code --&gt;
+<span>1</span> &lt;p class="alert-success"&gt;Thank you for signing up!&lt;/p&gt;</pre> -->
+<!--
+  / 7) Separate Content from Style
+-->
+
+
+
+
+
+<!--
+    8) Avoid a Case of “Divitis”
+-->
+<!-- <div class="section">
+  <div class="container">
+    <div class="headline">Headlines Across the Universe</div>
+  </div>
+</div>
+
+<pre class="prettyprint lang-html">
+&lt;!-- bad code --&gt;
+<span>1</span> &lt;div class="section"&gt;
+<span>2</span>     &lt;div class="container"&gt;
+<span>3</span>         &lt;div class="headline"&gt;Headlines Across the Universe&lt;/div&gt;
+<span>4</span>     &lt;/div&gt;
+<span>5</span> &lt;/div&gt;</pre>
+
+<section>
+  <div class="container">
+    <h1>Headlines Across the Universe</h1>
+  </div>
+</section>
+
+<pre class="prettyprint lang-html">
+&lt;!-- good code --&gt;
+<span>1</span> &lt;section&gt;
+<span>2</span>     &lt;div class="container"&gt;
+<span>3</span>         &lt;h1&gt;Headlines Across the Universe&lt;/h1&gt;
+<span>4</span>     &lt;/div&gt;
+<span>5</span> &lt;/section&gt;</pre> -->
+<!--
+  / 8) Avoid a Case of “Divitis”
+-->
+
+
+
+  <script src="js/prettyprint.js"></script>
+  </body>
+</html>

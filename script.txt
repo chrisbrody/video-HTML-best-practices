@@ -1,0 +1,96 @@
+#HTML_BEST 1.1 - Intro to HTML best practices
+#HTML_BEST 1.2 - Review of best practices
+#HTML_BEST 1.3 - Outro to HTML best practices
+
+
+
+#HTML_BEST 1.1 - Intro to HTML best practices
+Hey Chris from Codify Academy here, in this video I want to review a few best practices in HTML.
+
+Best practices when coding emphasizes that you keep code lean and well organized.
+
+#HTML_BEST 1.2 - Review of best practices
+---------------------------------------------------------------------------------------------------------------------------------
+  1) How to write HTML Standard-Compliant Markup?
+  In plain English it means code without syntax errors.
+
+  Even though content might be showing up in a browser it doesn't mean its semantically correct
+  we use an HTML validator to make sure our code is free of errors
+  when it is free of errors your HTML is Standard-Compliant
+
+  We have to pay close attention when writing HTML and be sure to close all elements correctly, to use IDs and classes appropriately, and to always validate our code.
+
+  there are a few errors in this bad code example on top, the same ID attribute value is used more than once, a p tag before the nested element was closed, and there is a missing closing tag.
+
+  You should be getting pretty comfortable doing this we should use the class attribute for styling multiple elements the same, make sure to close tags nested in other tags before closing the parent tag, and don't forget closing tags for the majority of elements that require them.
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+  2) Make Use of Semantic Elements
+  Because there are so many elements using the right one at the right time is hard, but this is the idea of semantics, if we use the correct elements your will show up sooner in search engine results.
+
+  Right now this isn't a huge deal but routine code reviews are common in the work place to ensure code is easily read by a search engines.
+
+  In this example the HTML doesn’t have proper heading or paragraph elements; instead, it uses meaningless elements to style and group content.
+
+  We instead use an h1 and p tag and it will be more semantic, the text in your Heading one will be easily searched in a search engine line google.
+---------------------------------------------------------------------------------------------------------------------------------
+  3) Use the Proper Document Structure
+
+  HTML is a forgiving language, therefore, pages can render without the use of the doctype html, head, and body elements. But without them there is no garuntee they will up in all browsers looking the same
+
+  We must always be sure to the use proper document structure, including the <!DOCTYPE html> doctype, and the <html>, <head>, and <body> elements. Doing so keeps our pages standards compliant and fully semantic, and helps guarantee sites will be rendered as we want.
+---------------------------------------------------------------------------------------------------------------------------------
+  4) Keep Syntax Organized
+
+  As pages grow, managing HTML become a task. Thankfully there are a few quick rules that can help us keep our syntax clean and organized.
+    Use lowercase letters within element names, attributes, and values
+    Indent nested elements
+    Strictly use double quotes, not single or completely omitted quotes
+    Remove the forward slash at the end of self-closing elements
+    Omit the values on Boolean attributes
+
+  If you follow these rules it will help keep code neat and legible. Looking at the two sets of HTML here, the good code example is easier to digest and understand.
+---------------------------------------------------------------------------------------------------------------------------------
+  5)Use Practical ID & Class Values
+
+  In order to create good ID and class values, they should relate to the content they wrap
+
+  In the bad code, we use a value of red, but it describes presentation content
+  and what if we change any styles, it wont make sense anymore.
+
+  So in this example, we should replace the value of red with the value of alert, because that describes the content,
+
+  So be sure to use classes and ids to describe content you want to style.
+---------------------------------------------------------------------------------------------------------------------------------
+  6) Use the Alternative Text Attribute on Images
+
+  Make sure your images have an alt attribute. these things called Screen readers and other accessibility software will use the value to provide context for images for those who can't see.
+
+  The alt attribute value should be a good description of what the image contains.
+
+  If any images dont provide relevance to the site, just leave the value blank so that screen readers ignore it instead of reading the name of the image file.
+
+  Additionally, if an image doesn’t have a meaningful value for the website, try to included as a CSS background image if possible, and not as an <img> element.
+---------------------------------------------------------------------------------------------------------------------------------
+  7) Separate Content from Style
+
+  Please never use inline styles in HTML, ever ,no matter what.
+
+  It will cause the site to load slower, become difficult to maintain, and in general it causes pain to future you and other developers that look at your code.
+
+  Just use an external style sheets, with classes, to target elements you want to style.
+---------------------------------------------------------------------------------------------------------------------------------
+  8) Avoid a Case of “Divitis”
+
+  Div solve everything, well at least you would think so, it's very common to use to many divs when you wanna style content.
+  It will ofter cause confusion about which div is for which style.
+
+  Here we see 3 classes when we could use more semantic code to avoid the over use of divs
+
+  try and use HTML5 elements where you can or use multiple classes on elements.
+---------------------------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------------------------
+#HTML_BEST 1.3 - Outro to HTML best practices
+Well that's it for now, I would recommend posting these and the CSS best practices some where so you can see them often till you get good at following them.
